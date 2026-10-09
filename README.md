@@ -1,5 +1,7 @@
 # opencode-voice-dictation
 
+[![ci](https://github.com/nachosag/opencode-voice-dictation/actions/workflows/ci.yml/badge.svg)](https://github.com/nachosag/opencode-voice-dictation/actions/workflows/ci.yml)
+
 Local, **no-LLM** speech-to-text for the [OpenCode](https://opencode.ai) TUI.
 Press a key, speak, and the transcription lands in your prompt — transcribed
 entirely on your machine with [whisper.cpp](https://github.com/ggml-org/whisper.cpp).

@@ -60,7 +60,10 @@ matching their existing whisper.cpp setup.
   context (delegating would re-derive it). No external writer.
 
 ## Delivery
-- Not a git repo. Offer `git init` + work-unit commit.
+- Public repo: https://github.com/nachosag/opencode-voice-dictation
+- Branch `main`, two work-unit commits, CI green.
+- Distribution: one-command clone into `~/.config/opencode/plugins/voice-dictation`,
+  plus `install.sh` (clone or `--link`).
 
 ## Progress / evidence
 - `node --check` OK for `backend.js`, `index.ts`; `tui.ts` OK (type stripping).
