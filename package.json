@@ -1,0 +1,47 @@
+{
+  "name": "opencode-voice-dictation",
+  "version": "0.1.0",
+  "description": "Local, no-LLM speech-to-text for the OpenCode TUI (whisper.cpp + PipeWire).",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./index.ts",
+    "./tui": "./tui.ts"
+  },
+  "files": [
+    "index.ts",
+    "tui.ts",
+    "backend.js",
+    "install.sh",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "opencode-tui-plugin",
+    "speech-to-text",
+    "stt",
+    "dictation",
+    "whisper",
+    "whisper.cpp",
+    "pipewire",
+    "tui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nachosag/opencode-voice-dictation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nachosag/opencode-voice-dictation/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check": "node --check backend.js && node --experimental-strip-types --check tui.ts && node --experimental-strip-types --check index.ts"
+  },
+  "dependencies": {
+    "@opencode/plugin": ">=2.0.4"
+  }
+}
